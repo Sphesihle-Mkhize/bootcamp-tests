@@ -1,18 +1,12 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Unit Testing</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.css">
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.min.js" charset="utf-8"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
 </head>
-
 <body>
     <div id="mocha"></div>
     <script>
@@ -23,38 +17,53 @@
     </script>
 
     <!-- the function to be tested -->
-    <script src="greet.js" charset="utf-8"></script>
+    <script src="myfunction/greet.js" charset="utf-8"></script>
     <!-- followed by the tests -->
-    <script src="test/greet.tests.js" charset="utf-8"></script>
+    <script src="test/greet.test.js" charset="utf-8"></script>
+
+    <script src="myfunction/isFromBellville.js" charset="utf-8"></script>
+    <script src="test/isFromBellville.test.js" charset="utf-8"></script>
+
+    <script src="myfunction/regCheck.js" charset="utf-8"></script>
+    <script src="test/regCheck.test.js" charset="utf-8"></script>
+
+    <script src="myfunction/countRegNumber.js" charset="utf-8"></script>
+    <script src="test/countRegNumber.test.js" charset="utf-8"></script>
+
+    <script src="myfunction/isWeekday.js" charset="utf-8"></script>
+    <script src="test/isWeekday.test.js" charset="utf-8"></script>
+
+    <script src="myfunction/yearsAgo.js" charset="utf-8"></script>
+    <script src="test/yearsAgo.test.js" charset="utf-8"></script>
+
+    <script src="myfunction/fromWhere.js" charset="utf-8"></script>
+    <script src="test/fromWhere.test.js" charset="utf-8"></script>
+
+    <script src="myfunction/transportFee.js" charset="utf-8"></script>
+    <script src="test/transportFee.test.js"></script>
+
+    <script src="myfunction/countAllPaarl.js" charset="utf-8"></script>
+    <script src="test/countAllPaarl.test.js" charset="utf-8"></script>
+
+    <script src="myfunction/countAllFromTown.js" charset="utf-8"></script>
+    <script src="test/countAllFromTown.test.js" charset="utf-8"></script>
+
+    <script src="myfunction/totalPhoneBill.js" charset="utf-8"></script>
+    <script src="test/totalPhoneBill.test.js" charset="utf-8"></script>
+
+    <script src="myfunction/mostProfitableDepartment.js" charset="utf-8"></script>
+    <script src="test/mostProfitableDepartment.test.js" charset="utf-8"></script>
+
+    <script src="myfunction/findItemsOver20.js" charset="utf-8"></script>
+    <script src="test/findItemsOver20.test.js" charset="utf-8"></script>
+
+    <script src="myfunction/findItemsOver.js" charset="utf-8"></script>
+    <script src="test/findItemsOver.test.js" charset="utf-8"></script>
+
     <script>
         // configure and run mocha
         mocha.checkLeaks();
         mocha.run();
-    </script>]'']
-
-
-<!-- the function to be tested -->
-<script src="greet.js" charset="utf-8"></script>
-<!-- followed by the tests -->
-<script src="test/greet.tests.js" charset="utf-8"></script>
-<script src="test/isFromBellville.test.js"></script>
-<script src="test/regCheck.test.js"></script>
-<script src="test/countRegNumber.test.js"></script>
-<script src="test/isWeekday.test.js"></script>
-<script src="test/yearsAgo.test.js"></script>
-<script src="test/countAllPaarl.test.js"></script>
-<script src="test/countAllFromTown.test.js"></script>
-<script src="test/transportFee.test.js"></script>
-<script src="test/totalPhoneBill.test.js"></script>
-<script src="test/fromWhere.test.js"></script>
-<script src="test/findItemsOver20.test.js"></script>
-<script src="test/mostProfitableDepartment.test.js"></script>
-<script>
-    // configure and run mocha
-    mocha.checkLeaks();
-    mocha.run();
-</script>
-
+    </script>
 </body>
-
 </html>
